@@ -1,0 +1,17 @@
+snippet pry
+	- binding.pry
+snippet form
+	= form_for ${1:object} do |form|
+		${2}
+snippet ftf
+	= form.text_field :${1:field_name}
+snippet fpf
+	= form.password_field :${1:password}
+snippet fef
+	= form.email_field :${1:email}
+snippet fsb
+	= form.submit '${1:create}'
+snippet fph
+	placeholder: '${1:placeholder text}'
+snippet fcl
+	class: '${1:classes}'

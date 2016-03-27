@@ -1,0 +1,31 @@
+snippet log
+	console.log(${1});
+snippet funa
+	function(${1}) {
+		${2}
+	}
+snippet fun
+	function ${1:name}(${2}) {
+		${3}
+	}
+snippet rt
+	return ${1:null};
+snippet ajx
+	$.ajax({
+		url: ${1},
+		type: ${2:'GET'},
+		success: function(response) {
+			${3}
+		},
+		error: function(response) {
+			${4}
+		}
+	});
+snippet fid
+	$('#${1}')${2}
+snippet fcl
+	$('.${1}')${2}
+snippet dcr
+	$(document).ready(function() {
+		${1}
+	});

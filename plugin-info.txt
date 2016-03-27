@@ -1,0 +1,7 @@
+{
+  "name" : "frostd-snippets.vim",
+  "version" : "dev",
+  "author" : "Denis Papushaev <denqxotl@gmail.com>",
+  "repository" : {"type": "git", "url": "git://github.com/FroSTD/frostd-snippets.vim.git"},
+  "dependencies" : {}
+}

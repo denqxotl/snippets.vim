@@ -1,0 +1,35 @@
+snippet pry
+	binding.pry
+snippet class
+	class ${1:ClassName}
+	end
+snippet module
+	module ${1:ModuleName}
+	end
+snippet include
+	include ${1:ModuleName}
+snippet extend
+	extend ${1:ModuleName}
+snippet ise
+	it { is_expected.to ${1:be} }
+snippet describe
+	describe ${1:Class} do
+	end
+snippet context
+	context ${1:'condition'} do
+	end
+snippet subject
+	subject { ${1:object} }
+snippet before
+	before { ${1:action} }
+snippet hso
+	has_one :${1:model}
+snippet hsm
+	has_many :${1:model}
+snippet hsbm
+	has_and_belongs_to_many :${1:model}
+snippet blt
+	belongs_to :${1:model}
+snippet ech
+	${1:object}s.each do |${1:object}|
+		${2}
