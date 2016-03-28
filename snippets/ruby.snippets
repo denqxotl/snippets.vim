@@ -1,27 +1,19 @@
 snippet pry
 	binding.pry
-snippet class
+snippet cls
 	class ${1:ClassName}
+		${2}
 	end
-snippet module
+snippet mdl
 	module ${1:ModuleName}
+		${2}
 	end
-snippet include
+snippet inc
 	include ${1:ModuleName}
-snippet extend
+snippet ext
 	extend ${1:ModuleName}
 snippet ise
 	it { is_expected.to ${1:be} }
-snippet describe
-	describe ${1:Class} do
-	end
-snippet context
-	context ${1:'condition'} do
-	end
-snippet subject
-	subject { ${1:object} }
-snippet before
-	before { ${1:action} }
 snippet hso
 	has_one :${1:model}
 snippet hsm
@@ -51,3 +43,63 @@ snippet rdt
 	redirect_to ${1}
 snippet prv
 	private
+snippet fsl
+	# frozen_string_literal: true
+snippet init
+	def initialize
+		${1}
+	end
+snippet initp
+	def initialize(${1})
+		${2}
+	end
+snippet letc
+	let(:${1:object}) { create(${2:object}) }
+snippet letb
+	let(:${1:object}) { build(${2:object}) }
+snippet atf
+	let(:${1:object}) { attributes_for(${2:object}) }
+snippet letc!
+	let!(:${1:object}) { create(${2:object}) }
+snippet letb!
+	let!(:${1:object}) { build(${2:object}) }
+snippet atf!
+	let!(:${1:object}) { attributes_for(${2:object}) }
+snippet bf
+	before { ${1} }
+snippet dsc
+	describe '${1}' do
+		${2}
+	end
+snippet cnx
+	context '${1}' do
+		${2}
+	end
+snippet sbj
+	subject { ${1} }
+snippet anio
+	allow_any_instance_of(${1}).to receive(:${2}).and_return(${3})
+snippet alw
+	allow(${1}).to receive(${2}).and_return(${3})
+snippet ibl
+	it_behaves_like '${1}'
+snippet dse
+	RSpec.shared_examples '${1}' do
+		${2}
+	end
+snippet rrh
+	require 'rails_helper'
+snippet fgd
+	FactoryGirl.define do
+		factory :${1} do
+			${2}
+		end
+	end
+snippet fct
+	factory :${1} do
+		${2}
+	end
+snippet fctp
+	factory_girl :${1}, parent: ${2} do
+		${3}
+	end
