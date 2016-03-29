@@ -1,3 +1,11 @@
+snippet dfvs
+	var ${1} = ${2};
+snippet dfv
+	var ${1};
+snippet dfdes
+	var $${1} = $('${2}');
+snippet dfde
+	var $${1};
 snippet log
 	console.log(${1});
 snippet funa
@@ -28,4 +36,33 @@ snippet fcl
 snippet dcr
 	$(document).ready(function() {
 		${1}
+	});
+snippet amdd
+	angular.module('${1:app}', [${2}]);
+snippet amdg
+	angular.module('${1}')${2}
+snippet actr
+	controller('${1}', function(${2}) {
+		${3}
+	});
+snippet adr
+	directive('${1}', function(${2}) {
+		return {
+			restrict: '${3}',
+			templateUrl: '${4}'
+		};
+	});
+snippet ascf
+	$scope.${1} = function(${2}) {
+		${3}
+	}
+snippet ascvs
+	$scope.${1} = ${2};
+snippet ascv
+	$scope.${1}
+snippet afd
+	factory('${1}', function() {
+		return {
+			${3}
+		};
 	});
