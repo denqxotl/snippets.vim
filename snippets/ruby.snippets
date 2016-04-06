@@ -125,3 +125,7 @@ snippet depd
 	dependent: :destroy
 snippet depda
 	dependent :delete_all
+snippet bfa
+	before_action :${1:method}, only: [:${2}]
+snippet sbfa
+	skip_before_action :${1:method}
