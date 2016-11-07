@@ -1,6 +1,6 @@
 # Installation
 ```vim
-Plug 'FroSTD/frostd-snippets.vim'
+Plug 'denqxotl/snippets.vim'
 ```
 
 Snippets set written by [@denqxotl](http://github.com/denis-papushaev)
