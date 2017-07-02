@@ -75,6 +75,7 @@ snippet une
 	});
 snippet crc
 	import React, { Component } from 'react';
+
 	class ${1:ComponentName} extends Component {
 		render() {
 			return(
@@ -82,6 +83,8 @@ snippet crc
 			)
 		}
 	}
+
+	export default ${1:ComponentName};
 snippet imp
 	import ${1:what} from '${2:where}';
 snippet fn
@@ -90,3 +93,5 @@ snippet fn
 	}
 snippet lmb
 	(${1:arg}) => {${2}}
+snippet exdf
+	export default ${1}
