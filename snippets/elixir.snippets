@@ -6,10 +6,21 @@ snippet def
 	def ${1:function}(${2:args}) do
 		${3}
 	end
-snippet puts
-	IO.puts(${1:var})
+snippet defp
+	defp ${1:function}(${2:args}) do
+		${3}
+	end
 snippet defwg
 	def ${1:function}(${2:args}) with ${3:fun}(${4:args}) do
 		${5}
 	end
-
+snippet puts
+	IO.puts(${1:var})
+snippet ieach
+	Enum.each(${1:list}, fn(${2:element}) -> ${3} end)
+snippet peach
+	|> Enum.each(fn(${1:element}) -> ${2} end)
+snippet prender
+	def render("${1:action.json}", ${2:_args}) do
+		${3}
+	end
