@@ -10,9 +10,19 @@ snippet defp
 	defp ${1:function}(${2:args}) do
 		${3}
 	end
+snippet indef
+	def ${1:function}(${2:args}), do: ${3}
 snippet defwg
 	def ${1:function}(${2:args}) with ${3:fun}(${4:args}) do
 		${5}
+	end
+snippet defg
+	defguard ${1:guard_name}(${2:arg}) when
+		${3:is_atom}(${4:arg})
+snippet case
+	case ${1:Module.function} do
+		${2:var} -> ${3}
+		${4:_} -> ${5}
 	end
 snippet puts
 	IO.puts(${1:var})
@@ -24,3 +34,30 @@ snippet prender
 	def render("${1:action.json}", ${2:_args}) do
 		${3}
 	end
+snippet implc
+	import Plug.Conn
+snippet crd
+	conn
+	|> render("${1:view}", ${2:map: map})
+snippet pstatus
+	|> put_status(${1:code})
+snippet presh
+	|> put_resp_header(${1:key}, ${2:value})
+snippet phl
+	|> halt()
+snippet defcontroller
+	defmodule ${1:ProjectName}Web.${2:Name}Controller do
+		use ${3:ProjectName}Web, :controller
+	end
+snippet defact
+	def ${1:action_name}(conn, ${2:_assigns}) do
+	end
+snippet resources
+	resources "/${1:map_to}", ${2:Name}Controller${3}
+snippet resource
+	resources "/${1:map_to}", ${2:Name}Controller, singleton: true{$3}
+snippet defview
+	defmodule ${1:ProjectName}Web.${2:Name}View do
+		use ${3:ProjectName}Web, :view
+	end
+
