@@ -24,6 +24,11 @@ snippet case
 		${2:var} -> ${3}
 		${4:_} -> ${5}
 	end
+snippet pcase
+	|> case do
+		${1:_} ->
+		${2:arg} ->
+	end
 snippet puts
 	IO.puts(${1:var})
 snippet ieach
@@ -55,9 +60,12 @@ snippet defact
 snippet resources
 	resources "/${1:map_to}", ${2:Name}Controller${3}
 snippet resource
-	resources "/${1:map_to}", ${2:Name}Controller, singleton: true{$3}
+	resources "/${1:map_to}", ${2:Name}Controller, singleton: true${3}
 snippet defview
 	defmodule ${1:ProjectName}Web.${2:Name}View do
 		use ${3:ProjectName}Web, :view
 	end
-
+snippet rpry
+	require IEx
+snippet pry
+	IEx.pry
